@@ -1,0 +1,33 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "KuTaKe", email = "kuttake@outlook.com"},
+]
+dependencies = [
+    "streamlit>=1.21.0",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.pyright]
+ignore = [
+    "__pypackages__",
+    "**/site-packages/**/*.py"
+]
+reportShadowedImports = false
+
+[tool.isort]
+skip = [
+    "**/__pypackages__/**/*.py",   
+]
+skip_glob = [
+    "__pypackages__/*",
+]
